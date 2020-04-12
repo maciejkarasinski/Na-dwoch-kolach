@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  line-height: 1.7;
+  background-color: #2f3336;
+}
+
+/* HEADER */
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.logo-img {
+  padding-top: 8px;
+  padding-right: 20px;
+}
+
+.logo {
+  font-size: 44px;
+  font-weight: 700;
+  color: #ddd;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.navigation {
+  text-align: center;
+  background-color: #1c74b2;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  height: 56px;
+
+  line-height: 200%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu > li {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 1px dashed #0a2b42;
+  min-width: 202px;
+}
+
+.menu > li:first-child {
+  border-left: 1px dashed #0a2b42;
+}
+
+.menu li > ul {
+  flex-direction: column;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #0a2b42;
+}
+
+.menu li > ul {
+  display: none;
+}
+
+.menu li:hover > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drop-down > ul {
+  list-style: none;
+  width: 100%;
+}
+
+.drop-down > ul > li {
+  background-color: #1c63a1;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.navigation .drop-down > a:after {
+  content: '+';
+  padding-left: 5px;
+}
+
+.navigation .drop-down > ul > li {
+  border-top: 1px dashed #0a2b42;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+
+/* main page */
+
+.logo-homepage {
+  font-size: 44px;
+  font-weight: 700;
+  color: #ddd;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.logo-header {
+  height: 75vh;
+  background-image: url(../img/strona_glowna.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+/*article page */
+.container {
+  background-color: #191d21;
+  width: 100%;
+}
+
+.article-container {
+  width: 80%;
+  background-color: #222930;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-align: justify;
+}
+.article-header {
+  font-weight: 700;
+  font-size: 40px;
+  color: #39a5f1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-header {
+  font-weight: 400;
+  font-size: 32px;
+  color: #39a5f1;
+  margin-bottom: 20px;
+}
+
+.article-img {
+  width: 100%;
+}
+
+/* FOOTER */
+.info {
+  text-align: center;
+  color: white;
+  margin: auto;
+}
