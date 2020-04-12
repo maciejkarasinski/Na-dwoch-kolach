@@ -174,9 +174,79 @@ body {
   width: 100%;
 }
 
+.two-photos {
+  display: flex;
+}
+.two-photos .photo-1 {
+  width: 50%;
+}
+.two-photos .photo-2 {
+  width: 50%;
+}
+
+.helmet-img-container {
+  display: flex;
+}
+.helmet-img-container .photo {
+  width: 40%;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.helmet-img-container .text {
+  width: 60%;
+}
+.task-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  padding: 10px;
+  margin-top: 40px;
+  width: 80%;
+  left: 0;
+  background-color: #2f3336;
+}
+
+.answer {
+  padding: 10px;
+  margin-top: 10px;
+  width: 80%;
+  background-color: #191d21;
+  color: #39a5f1;
+  align-self: flex-end;
+}
+
+.section-container {
+  display: flex;
+  width: 100%;
+  background-color: #191d21;
+  margin-bottom: 20px;
+}
+.section-container .img-container {
+  width: 25%;
+  padding: 20px;
+}
+
+.section-container .text-container {
+  width: 75%;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.section-link {
+  text-decoration: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
 /* FOOTER */
 .info {
   text-align: center;
   color: white;
   margin: auto;
+  width: 100%;
 }
