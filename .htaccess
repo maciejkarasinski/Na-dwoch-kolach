@@ -5,5 +5,5 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule na-dwoch-kolach index.html
+RewriteRule na-dwoch-kolach home.html
 RewriteRule dlaczego-rower dlaczego.html
