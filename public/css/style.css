@@ -510,3 +510,23 @@ body {
   margin: auto;
   width: 100%;
 }
+
+#input-name {
+  display: none;
+}
+
+#output-name {
+  display: none;
+}
+
+#input-submit {
+  display: none;
+}
+
+.welcome {
+  display: flex;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #39a5f1;
+}

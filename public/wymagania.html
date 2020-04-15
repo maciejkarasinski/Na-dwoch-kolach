@@ -28,8 +28,16 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onload="checkCookie()">
     <header>
+      <div class="welcome">
+        <input type="text" id="input-name" placeholder="Podaj imię" />
+        <label id="output-name">Podaj imię</label>
+        <button id="input-submit" type="submit">Prześlij</button>
+      </div>
+
+      <script src="index.js"></script>
+
       <div class="logo-container">
         <div class="logo-img">
           <img src="img/logo_srednie.png" alt="logo strony" />
@@ -109,11 +117,10 @@
               </div>
 
               <div class="answer">
-                Pretium fusce id velit ut tortor pretium viverra. Dui vivamus
-                arcu felis bibendum ut tristique. Vitae sapien pellentesque
-                habitant morbi tristique. Tempus imperdiet nulla malesuada
-                pellentesque elit eget. Non consectetur a erat nam at. Diam quis
-                enim lobortis scelerisque fermentum.
+                Do realizacji projektu wykorzystano HTML5 oraz CSS3. Do
+                stworzenia serwera wykorzystano NodeJS z biblioteką Express.
+                Stworzono również niewielki skrypt w javascript do obsługi
+                ciasteczek.
               </div>
 
               <div class="task">
@@ -122,11 +129,10 @@
               </div>
 
               <div class="answer">
-                Pretium fusce id velit ut tortor pretium viverra. Dui vivamus
-                arcu felis bibendum ut tristique. Vitae sapien pellentesque
-                habitant morbi tristique. Tempus imperdiet nulla malesuada
-                pellentesque elit eget. Non consectetur a erat nam at. Diam quis
-                enim lobortis scelerisque fermentum.
+                Strona została sformatowana w sposób minimalistyczny, schludny i
+                czytelny, większość formatowania oparto na flexboxie. Dodatkowo
+                na podstronie - Galeria wykorzystano jedno z nowszych narzędzi
+                CSS3 - CSS GRID.
               </div>
 
               <div class="task">
@@ -142,11 +148,14 @@
               </div>
 
               <div class="answer">
-                Pretium fusce id velit ut tortor pretium viverra. Dui vivamus
-                arcu felis bibendum ut tristique. Vitae sapien pellentesque
-                habitant morbi tristique. Tempus imperdiet nulla malesuada
-                pellentesque elit eget. Non consectetur a erat nam at. Diam quis
-                enim lobortis scelerisque fermentum.
+                Serwis testowano na najnowszej wersji Google Chrome i Firefoxa
+                dla systemu Windows, oraz Chrome dla systemu Android, na
+                urządzeniu mobilnym. Serwis funkcjonował na tych przeglądarkach
+                poprawnie. Dodatkowo testowano działanie serwisu na IE 11. W tym
+                przypadku nie działa CSS Grid - system ten nie jest obsługiwany
+                przez tą przeglądarkę. Strona działa poprawnie, ale formatowanie
+                galerii zdjęć wygląda inaczej - zdjęcia wyświetlają się jedno
+                pod drugim.
               </div>
 
               <div class="task">
@@ -159,11 +168,14 @@
               </div>
 
               <div class="answer">
-                Pretium fusce id velit ut tortor pretium viverra. Dui vivamus
-                arcu felis bibendum ut tristique. Vitae sapien pellentesque
-                habitant morbi tristique. Tempus imperdiet nulla malesuada
-                pellentesque elit eget. Non consectetur a erat nam at. Diam quis
-                enim lobortis scelerisque fermentum.
+                Przy budowie witryny wykorzystano znaczniki semantyczne HTML5
+                takie jak nav, header, footer, main, section, article itp. aby
+                robot czytający mógł prawidłowo poruszać się po stronie.
+                Wszystkie zdjęcia posiadają teksty alternatywne, aby osoba
+                niewidoma mogła wiedzieć, co się na nich znajduje. Dodatkowo
+                wykorzystano "przyjazne linki" takie jak /galeria-zdjec-rowery
+                oraz słowa kluczowe, aby strony mogły zostać łatwiej wyszukane
+                przez wyszukiwarkę.
               </div>
 
               <div class="task">
@@ -174,11 +186,13 @@
               </div>
 
               <div class="answer">
-                Pretium fusce id velit ut tortor pretium viverra. Dui vivamus
-                arcu felis bibendum ut tristique. Vitae sapien pellentesque
-                habitant morbi tristique. Tempus imperdiet nulla malesuada
-                pellentesque elit eget. Non consectetur a erat nam at. Diam quis
-                enim lobortis scelerisque fermentum.
+                Poza HTML i CSS serwis posiada skrypt po stronie serwera
+                napisany w NodeJS z biblioteką Express, który stanowi serwer
+                oraz zarządza nawigacją w serwisie - zdefiniowane są tam
+                obsługiwane ścieżki. Dodatkowo stworzono prosty skrypt po
+                stronie klienta do obsługi ciasteczek. Użytkownik może podać
+                swoje imię, aby w prawym górnym rogu strony pojawiało się
+                przyjazne powitanie, za każdym razem kiedy odwiedzi witrynę.
               </div>
 
               <div class="task">
@@ -189,11 +203,12 @@
               </div>
 
               <div class="answer">
-                Pretium fusce id velit ut tortor pretium viverra. Dui vivamus
-                arcu felis bibendum ut tristique. Vitae sapien pellentesque
-                habitant morbi tristique. Tempus imperdiet nulla malesuada
-                pellentesque elit eget. Non consectetur a erat nam at. Diam quis
-                enim lobortis scelerisque fermentum.
+                Serwis posiada nawigację globalną, w której jest dostęp do
+                wszystkich podstron serwisu. Ten rodzaj nawigacji w zupełności
+                wystarczy, dla serwisu tej wielkości. Nawigacja wyświetla się na
+                każdej podstronie. Pokazane są główne kategorie stron, a w
+                niektórych przypadkach po najechaniu myszką, rozwija się
+                dodatkowe menu z podkategoriami.
               </div>
 
               <div class="task">
@@ -204,11 +219,9 @@
               </div>
 
               <div class="answer">
-                Pretium fusce id velit ut tortor pretium viverra. Dui vivamus
-                arcu felis bibendum ut tristique. Vitae sapien pellentesque
-                habitant morbi tristique. Tempus imperdiet nulla malesuada
-                pellentesque elit eget. Non consectetur a erat nam at. Diam quis
-                enim lobortis scelerisque fermentum.
+                Uzasadnienia na wszystkie punkty zostały zawarte powyżej.
+                Projekt spełnia postawione wymagania, przynajmniej w stopniu
+                minimalnym.
               </div>
 
               <div class="task">
@@ -222,17 +235,11 @@
               </div>
 
               <div class="answer">
-                Pretium fusce id velit ut tortor pretium viverra. Dui vivamus
-                arcu felis bibendum ut tristique. Vitae sapien pellentesque
-                habitant morbi tristique. Tempus imperdiet nulla malesuada
-                pellentesque elit eget. Non consectetur a erat nam at. Diam quis
-                enim lobortis scelerisque fermentum.
+                Interfejs użytkownika jest prosty i czytelny. Wielkość czcionek
+                serwisu została odpowiednio dobrana i różni się w zależności od
+                rozdzielczości ekranu na urządzeniu użytkownika.
               </div>
             </div>
-
-            <p>
-              Projekt spełnia minimalne wymagania. :)
-            </p>
           </div>
         </div>
       </article>
@@ -240,7 +247,8 @@
 
     <footer>
       <div class="info">
-        Wszelkie prawa zastrzeżone &copy; 2020 Dziękuję za wizytę!
+        Wszelkie prawa zastrzeżone &copy; Maciej Karasiński, 2020 Dziękuję za
+        wizytę!
       </div>
     </footer>
   </body>

@@ -28,8 +28,16 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onload="checkCookie()">
     <header>
+      <div class="welcome">
+        <input type="text" id="input-name" placeholder="Podaj imię" />
+        <label id="output-name">Podaj imię</label>
+        <button id="input-submit" type="submit">Prześlij</button>
+      </div>
+
+      <script src="index.js"></script>
+
       <div class="logo-container">
         <div class="logo-img">
           <img src="img/logo_srednie.png" alt="logo strony" />
@@ -145,7 +153,8 @@
 
     <footer>
       <div class="info">
-        Wszelkie prawa zastrzeżone &copy; 2020 Dziękuję za wizytę!
+        Wszelkie prawa zastrzeżone &copy; Maciej Karasiński, 2020 Dziękuję za
+        wizytę!
       </div>
     </footer>
   </body>
